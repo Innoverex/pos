@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dd="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/waiting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textview_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center|left"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_normal_text" />
+
+        </LinearLayout>
+
+        <cn.basewin.unionpay.view.InputWidget
+            android:id="@+id/inputview0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            dd:labelInput="操作员号:"></cn.basewin.unionpay.view.InputWidget>
+
+        <cn.basewin.unionpay.view.InputWidget
+            android:id="@+id/inputview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            dd:pw="true"
+            dd:labelInput="新密码:"></cn.basewin.unionpay.view.InputWidget>
+
+        <cn.basewin.unionpay.view.InputWidget
+            android:id="@+id/inputview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            dd:pw="true"
+            dd:labelInput="重输新密码:"></cn.basewin.unionpay.view.InputWidget>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_account_unok"
+            android:layout_width="@dimen/width_normal_button"
+            android:layout_height="@dimen/height_normal_button"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/normal_cancel_state"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size_normal_text"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/btn_dialog_account_ok"
+            android:layout_width="@dimen/width_normal_button"
+            android:layout_height="@dimen/height_normal_button"
+            android:background="@drawable/normal_ok_state"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size_normal_text"
+            android:focusable="false" />
+    </LinearLayout>
+</LinearLayout>

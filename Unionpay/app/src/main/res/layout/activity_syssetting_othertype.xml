@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shield_prepaycard_cash" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_shield_prepaycard_cash"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shield_prepaycard_account" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_shield_prepaycard_account"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/shanghuhao" />
+
+        <EditText
+            android:id="@+id/et_shanghuhao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:maxLength="15"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/zhongduanhao" />
+
+        <EditText
+            android:id="@+id/et_zhongduanhao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:maxLength="8"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/shanghuming" />
+
+        <EditText
+            android:id="@+id/et_shanghuming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/yingwenming" />
+
+        <EditText
+            android:id="@+id/et_yingwenming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/ziyingyongming" />
+
+        <EditText
+            android:id="@+id/et_ziyingyongming"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

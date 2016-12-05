@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/outside_call" />
+
+        <EditText
+            android:id="@+id/et_outside_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/main_phone_num_1" />
+
+        <EditText
+            android:id="@+id/et_main_phone_num_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/main_phone_num_2" />
+
+        <EditText
+            android:id="@+id/et_main_phone_num_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/main_phone_num_3" />
+
+        <EditText
+            android:id="@+id/et_main_phone_num_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/at_order" />
+
+        <EditText
+            android:id="@+id/et_at_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/dial_style" />
+
+        <TextView
+            android:id="@+id/tv_dial_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/pathch" />
+
+        <EditText
+            android:id="@+id/et_pathch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

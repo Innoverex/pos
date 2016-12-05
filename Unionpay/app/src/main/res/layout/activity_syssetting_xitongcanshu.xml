@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/sysseeting_layout_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/liushuihao_maohao" />
+
+                <EditText
+                    android:id="@+id/et_liushuihao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/sysseeting_layout_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/picihao_maohao" />
+
+                <EditText
+                    android:id="@+id/et_picihao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="6"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shifoudayinzhongwenshoudanhang" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_shifoudayinzhongwenshoudanhang"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/sysseeting_layout_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shifoudayinzhongwenfakahang" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_shifoudayinzhongwenfakahang"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/sysseeting_layout_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/remindayinlianshu_maohao" />
+
+                <EditText
+                    android:id="@+id/et_remindayinlianshu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/sysseeting_layout_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/qiangoudanshifoudayinyingwen" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_qiangoudanshifoudayinyingwen"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/sysseeting_layout_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/chongzhengchongfacishu" />
+
+                <EditText
+                    android:id="@+id/et_chongzhengchongfacishu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/sysseeting_layout_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/xiaofeibili_maohao" />
+
+                <EditText
+                    android:id="@+id/et_xiaofeibili"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/chexiaotuihuidayinfuhao" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_chexiaotuihuidayinfuhao"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/sysseeting_layout_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/qiandaochongfacishu" />
+
+                <EditText
+                    android:id="@+id/et_qiandaochongfacishu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

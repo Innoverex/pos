@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.basewin.unionpay.setting.LoadTmkSwipeCardActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/common_syssetting_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_swipe"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/p2000_en_ic" />
+
+        <TextView
+            android:id="@+id/tv_swipe_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#E5EBEB"
+            android:textSize="30dp"
+            android:text="@string/use_your_card" />
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="@android:style/Widget.ProgressBar.Large.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/swipe_back" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理中，请等待..."
+                android:textSize="30dp"
+                android:layout_margin="10dp" />
+
+            <View
+                android:id="@+id/v_wait"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:background="@drawable/anim_roll_wait" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/if_support_eletronic_signature" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_if_support_eletronic_signature"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/wait_time_for_sign" />
+
+                <EditText
+                    android:id="@+id/et_wait_time_for_sign"
+                    style="@style/syssetting_txt"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/upload_sign_try_time" />
+
+                <EditText
+                    android:id="@+id/et_upload_sign_try_time"
+                    style="@style/syssetting_txt"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/offline_count_between_online" />
+
+                <EditText
+                    android:id="@+id/et_offline_count_between_online"
+                    style="@style/syssetting_txt"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/max_count_of_sign" />
+
+                <EditText
+                    android:id="@+id/et_max_count_of_sign"
+                    style="@style/syssetting_txt"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/esign_try_time" />
+
+                <EditText
+                    android:id="@+id/et_esign_try_time"
+                    style="@style/syssetting_txt"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/if_input_phone_num" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_if_input_phone_num"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/if_support_subpackage_upload" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_if_support_subpackage_upload"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

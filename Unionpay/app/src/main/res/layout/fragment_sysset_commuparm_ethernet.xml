@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_isuse_dhcp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:text="使用DHCP" />
+
+    <LinearLayout
+        android:id="@+id/ll_set_cp_ip"
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_cp_ip" />
+
+        <EditText
+            android:id="@+id/et_set_cp_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_set_gateway_ip"
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_gateway_ip" />
+
+        <EditText
+            android:id="@+id/et_set_gateway_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_set_subnet_mask"
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_subnet_mask" />
+
+        <EditText
+            android:id="@+id/et_set_subnet_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_host_ip" />
+
+        <EditText
+            android:id="@+id/et_set_host_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_host_post" />
+
+        <EditText
+            android:id="@+id/et_set_host_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_backup_ip" />
+
+        <EditText
+            android:id="@+id/et_set_backup_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_backup_post" />
+
+        <EditText
+            android:id="@+id/et_set_backup_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    tools:context="cn.basewin.unionpay.trade.ShowTotalAty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:src="@mipmap/unionpay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="内卡借记总金额：" />
+
+            <TextView
+                android:id="@+id/tv_domestic_debit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="内卡借记总笔数：" />
+
+            <TextView
+                android:id="@+id/tv_domestic_debit_acount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="内卡贷记总金额：" />
+
+            <TextView
+                android:id="@+id/tv_domestic_credit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="内卡贷记总笔数：" />
+
+            <TextView
+                android:id="@+id/tv_domestic_credit_acount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="外卡借记总金额：" />
+
+            <TextView
+                android:id="@+id/tv_foreign_debit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="外卡借记总笔数：" />
+
+            <TextView
+                android:id="@+id/tv_foreign_debit_acount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="外卡贷记总金额：" />
+
+            <TextView
+                android:id="@+id/tv_foreign_credit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|right"
+                android:text="外卡贷记总笔数：" />
+
+            <TextView
+                android:id="@+id/tv_foreign_credit_acount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical|left"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

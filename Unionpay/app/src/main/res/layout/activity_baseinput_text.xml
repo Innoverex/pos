@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dd="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_baseinputmoney_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/please_enter_the_amount"
+        android:textSize="@dimen/hint_size" />
+
+    <cn.basewin.unionpay.view.InputWidget
+        android:id="@+id/inputview_input_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_normal_edittext"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        dd:labelInput="@string/jine"
+        dd:maxLenght="12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <include
+                android:id="@+id/btn_input_money"
+                layout="@layout/input_botton" />
+        </RelativeLayout>
+
+        <cn.basewin.unionpay.view.VirtualKeyboardView
+            android:id="@+id/keyboard_input_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>

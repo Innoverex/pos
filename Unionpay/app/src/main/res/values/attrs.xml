@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WidgetInput">
+        <attr name="labelInput" format="string" />
+        <attr name="pw" format="boolean" />
+        <attr name="maxLenght" format="integer" />
+        <attr name="backgroundResource" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="TipView">
+        <attr name="fee" format="string" />
+        <attr name="type">
+            <enum name="input" value="0" />
+            <enum name="confirm" value="1" />
+            <enum name="card" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="gifView">
+
+        <!-- 图片来源 -->
+        <attr name="src" format="integer" />
+
+        <!-- 播放延迟 -->
+        <attr name="delay" format="integer" />
+
+        <!-- 设置是否停止 -->
+        <attr name="stop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LInputView">
+        <attr name="llabel" format="string" />
+    </declare-styleable>
+
+
+</resources>

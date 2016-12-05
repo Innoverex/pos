@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_dedede"
+    tools:context=".setting.SetTmkIndexActivity">
+
+    <include layout="@layout/common_syssetting_title" />
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/zhumiyuesuoyinshezhi" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:maxLength="32"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/tpdu" />
+
+                <EditText
+                    android:id="@+id/et_tpdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/connect_time_out" />
+
+                <EditText
+                    android:id="@+id/et_connect_time_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="8" />
+            </LinearLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/if_support_socket" />
+
+                <CheckBox
+                    android:id="@+id/cb_if_support_socket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="支持" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/if_support_ssl" />
+
+                <CheckBox
+                    android:id="@+id/cb_if_support_ssl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="支持" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

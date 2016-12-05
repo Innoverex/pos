@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/xiaofei" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_xiaofei"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/xiaofeicexiao" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_xiaofeichexiao"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/text_return_goods" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_tuihuo"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/action_balance" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_yuechaxun"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/yushouquan" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_yushouquan"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/action_authorization_undo" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_yushouquanchexiao"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/yushouquanwanchengqingqiu" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_yushouquanwanchengqingqiu"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/yushouquanwanchengtongzhi" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_yushouquanwanchengtongzhi"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/yushouquanwanchengcexiao" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_yushouquanwanchengchexiao"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/offlineSettle" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_lixianjiesuan"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/settleAdjust" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_jiesuantiaozheng"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/tip" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_tip"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/xiaoedaishouquan" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_xiaoedaishouquan"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

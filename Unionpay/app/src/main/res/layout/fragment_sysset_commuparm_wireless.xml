@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/apn_setting" />
+
+        <EditText
+            android:id="@+id/et_apn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/user_name_setting" />
+
+        <EditText
+            android:id="@+id/et_user_name_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/user_pwd_setting" />
+
+        <EditText
+            android:id="@+id/et_user_pwd_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/if_use_custom_apn" />
+
+        <ToggleButton
+            android:id="@+id/togbtn_if_use_custom_apn"
+            style="@style/syssetting_togglebtn"
+            android:layout_alignParentRight="true"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_host_ip" />
+
+        <EditText
+            android:id="@+id/et_set_host_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_host_post" />
+
+        <EditText
+            android:id="@+id/et_set_host_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_backup_ip" />
+
+        <EditText
+            android:id="@+id/et_set_backup_ip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/sysseeting_layout_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/syssetting_txt"
+            android:text="@string/set_backup_post" />
+
+        <EditText
+            android:id="@+id/et_set_backup_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

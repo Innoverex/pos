@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dd="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <cn.basewin.unionpay.view.InputWidget
+        android:id="@+id/iw_operator_number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        dd:labelInput="操作员号码 :"
+        dd:maxLenght="2" />
+
+    <cn.basewin.unionpay.view.InputWidget
+        android:id="@+id/iw_operator_old_pw"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        dd:labelInput="请输入原密码 :"
+        dd:maxLenght="4"
+        dd:pw="true" />
+
+    <cn.basewin.unionpay.view.InputWidget
+        android:id="@+id/iw_operator_new_pw"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        dd:labelInput="请输入新密码 :"
+        dd:maxLenght="4"
+        dd:pw="true" />
+
+    <cn.basewin.unionpay.view.InputWidget
+        android:id="@+id/iw_operator_new_pw2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        dd:labelInput="请再次输入新密码 :"
+        dd:maxLenght="4"
+        dd:pw="true" />
+</LinearLayout>

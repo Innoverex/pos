@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="shuzijianpan_height">300dp</dimen>
+    <dimen name="main_gridview_paddingTB">15dp</dimen>
+
+    <dimen name="main_hud_height">100dp</dimen>
+    <dimen name="main_hud_bottom">10dp</dimen>
+
+    <dimen name="width_custom_dialog">400dip</dimen><!-- 弹出框宽度 -->
+    <dimen name="width_holder_info_button">100dip</dimen>
+    <dimen name="width_normal_button">140dip</dimen>
+
+
+    <dimen name="height_trans_bg_title">54dip</dimen> <!-- 交易界面标题高度 -->
+    <dimen name="height_normal_button">50dip</dimen>
+    <dimen name="height_custom_dialog">300dip</dimen>
+    <dimen name="height_normal_edittext">50dip</dimen>
+
+
+    <dimen name="size_normal_text">22dip</dimen>
+    <dimen name="size_toast_text">19dip</dimen>
+    <dimen name="size_trans_code">45sp</dimen>
+    <dimen name="size_edit_input">18dip</dimen>
+
+    <dimen name="size_grid_text">18dip</dimen>
+    <dimen name="hint_size">25sp</dimen>
+    <dimen name="main_bottom_point_size">14dip</dimen>
+
+
+    <dimen name="marginBottom_large">35sp</dimen>
+    <dimen name="marginTop_middle">15sp</dimen>
+    <dimen name="marginTop_small">5sp</dimen>
+
+    <dimen name="font_size_xlarge">26sp</dimen>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dd="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_trans"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <cn.basewin.unionpay.view.InputWidget
+                android:id="@+id/inputview_oper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_normal_edittext"
+                dd:maxLenght="2"
+                dd:labelInput="操作员号码：" />
+
+            <cn.basewin.unionpay.view.InputWidget
+                android:id="@+id/inputview_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_normal_edittext"
+                android:layout_marginTop="25dip"
+                dd:labelInput="操作员密码："
+                dd:pw="true"
+                dd:maxLenght="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/height_normal_button"
+                android:layout_marginRight="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/normal_cancel_state"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_normal_text" />
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/height_normal_button"
+                android:layout_weight="1"
+                android:background="@drawable/normal_ok_state"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_normal_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

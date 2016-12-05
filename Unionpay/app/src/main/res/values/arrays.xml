@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="CheckInfoAty">
+        <item>原交易</item>
+        <item>  卡号</item>
+        <item>  金额</item>
+        <item>凭证号</item>
+        <item>参考号</item>
+    </string-array>
+    <string-array name="VersionAty">
+        <item>银联版本</item>
+        <item>商户号</item>
+        <item>终端号</item>
+        <item>日期/时间</item>
+        <item>程序版本</item>
+    </string-array>
+    <string-array name="poundage">
+        <item>1.一次性支付</item>
+        <item>2.分期支付</item>
+    </string-array>
+    <string-array name="detail">
+        <item>卡号</item>
+        <item>流水号</item>
+        <item>授权码</item>
+        <item>金额</item>
+        <item>日期/时间</item>
+    </string-array>
+
+
+</resources>

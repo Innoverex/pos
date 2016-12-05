@@ -1,0 +1,48 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "cn.basewin.unionpay"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 5
+        versionName "1.0.4"
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "RELEASE_TIME", releasetime())
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "RELEASE_TIME", releasetime())
+        }
+    }
+
+}
+
+def releasetime() {
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    Date date = new Date();
+    "\"" + sdf.format(date) + "\"";
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile files('libs/core4.7.5.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/xutils-3.3.22.jar')
+    provided files('extern_libs/odm.jar')
+    provided files('extern_libs/classes_2.1.11_20160907.jar')
+    compile files('libs/bw_pos_sdk2.0.19.tmp.jar')
+    compile files('libs/bcprov-jdk16-1.45.jar')
+    compile files('libs/ksoap2-android-assembly-3.6.0-jar-with-dependencies.jar')
+    compile files('libs/zbardecoder.jar')
+}

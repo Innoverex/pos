@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dedede"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_syssetting_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shield_consumer_electronic_cash" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_shield_consumer_electronic_cash"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/feijiekuaisuzhifuxiaofei" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_feijiekuaisuzhifuxiaofei"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/dianzixianjinzhidingzhanghuquanchun" />
+
+                <ToggleButton
+                    android:id="@+id/togbtn_dianzixianjinzhidingzhanghuquanchun"
+                    style="@style/syssetting_togglebtn"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shield_transfer_nofrom" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_shield_transfer_nofrom"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shield_transfer_cash" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_shield_transfer_cash"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_gray">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/dianzhixianjinchongzhicexiao" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_dianzhixianjinchongzhicexiao"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/sysseeting_layout_white">
+
+                <TextView
+                    style="@style/syssetting_txt"
+                    android:text="@string/shield_ec_refund" />
+
+                <ToggleButton
+                    style="@style/syssetting_togglebtn"
+                    android:id="@+id/togbtn_shield_ec_refund"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
